@@ -1,0 +1,91 @@
+@import "./common/animations";
+
+.game-over-container {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &,
+    &::before {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: rgba(#000, 0.5);
+        backdrop-filter: blur(15px);
+    }
+
+    &.visible {
+        display: flex;
+    }
+
+    &.win {
+        h1 span {
+            color: #0f910b;
+        }
+    }
+
+    &.lose {
+        h1 span {
+            color: #ff0000;
+        }
+    }
+}
+
+.game-over-message {
+    background-color: #fff;
+    padding: 15px 25px;
+    white-space: pre-line;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(#000, 0.25), 0 0 20px rgba(#000, 0.35);
+    z-index: 1;
+    @include fade-in-up();
+
+    h1 {
+        font-size: clamp(32px, 5vw, 45px);
+
+        span {
+            text-transform: uppercase;
+        }
+
+        b {
+            color: #47b3e6;
+            text-transform: capitalize;
+        }
+    }
+
+    h2 {
+        font-size: clamp(25px, 5vw, 32px);
+        font-style: italic;
+        letter-spacing: 0.75px;
+        color: #b1b1b1;
+    }
+
+    button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ff0000;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        line-height: 1;
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: opacity ease 250ms;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+}

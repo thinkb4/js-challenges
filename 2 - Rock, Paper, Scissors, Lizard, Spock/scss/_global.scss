@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 50px;
+    font-family: var(--primary-font);
+    background-image: url("./assets/background.jpg");
+    background-color: #222;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$max-width-md} {
+        padding: 25px;
+        justify-content: flex-start;
+    }
+}
+
+.app-title,
+#options {
+    @include fade-in-up();
+}
+
+.app-title {
+    $border-width: 2px;
+
+    font-size: clamp(45px, 5vw, 75px);
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: #{-$border-width} 0 #000, 0 $border-width #000, $border-width 0 #000,
+        0 #{-$border-width} #000;
+}
+
+#options {
+    width: 100%;
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 25px;
+    animation-delay: 50ms;
+
+    @media #{$max-width-md} {
+        grid-template-columns: repeat(2, 1fr);
+
+        game-option {
+            &:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+    }
+
+    game-option {
+        margin: 0 auto;
+    }
+}

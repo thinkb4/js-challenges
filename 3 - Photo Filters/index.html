@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Photo Filters</title>
+    </head>
+    <body>
+        <div class="image-container">
+            <img
+                id="target-image"
+                src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="Placeholder image"
+            />
+
+            <input value="" type="range" id="intensity" step="0.1" class="hidden" />
+        </div>
+
+        <select class="filters">
+            <option value="" selected>Select a filter</option>
+        </select>
+
+        <script src="./js/main.js" type="module"></script>
+    </body>
+</html>

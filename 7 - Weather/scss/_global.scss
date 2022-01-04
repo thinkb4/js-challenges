@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: $primary-font;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $primary-color;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-input {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 5px solid lighten($secondary-color, 10%);
+    text-align: center;
+    transition: border-color ease 250ms;
+
+    &:focus {
+        outline: none;
+        border-color: lighten($secondary-color, 25%);
+    }
+}

@@ -1,0 +1,21 @@
+@import "./variables/media-queries";
+
+.option {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: transform ease 500ms;
+
+    &.selected,
+    &:hover {
+        filter: grayscale(0);
+        transform: scale(1.25) rotate(5deg);
+    }
+
+    img {
+        max-height: 100px;
+    }
+}

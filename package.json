@@ -1,0 +1,11 @@
+{
+    "type": "module",
+    "scripts": {
+        "presass": "yarn install",
+        "sass": "node ./src/js/sass-compiler.js"
+    },
+    "devDependencies": {
+        "chalk": "^5.0.0",
+        "sass": "^1.45.2"
+    }
+}

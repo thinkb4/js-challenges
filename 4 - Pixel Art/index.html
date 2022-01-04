@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Pixel Art</title>
+    </head>
+    <body>
+        <div id="grid" class="pixel-art-grid"></div>
+
+        <div class="pixel-art-sidebar">
+            <div class="input-container">
+                <label for="color-intensity">Color</label>
+                <input type="color" name="color-input" id="color-input" />
+            </div>
+
+            <div class="input-container">
+                <label for="color-intensity">Intensity</label>
+                <input
+                    type="range"
+                    name="color-intensity"
+                    id="color-intensity"
+                    min="0"
+                    max="1"
+                    step="0.1"
+                    value="1"
+                />
+            </div>
+
+            <div class="input-container">
+                <label for="pixel-size">Pixel size</label>
+                <input type="number" name="pixel-size" id="pixel-size" min="0" step="1" />
+            </div>
+        </div>
+
+        <script src="./js/main.js" type="module"></script>
+    </body>
+</html>

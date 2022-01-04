@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Weather App</title>
+    </head>
+    <body>
+        <input type="text" id="location-input" placeholder="Type a location..." />
+
+        <div class="weather-card no-data">
+            <h1 class="location-name"></h1>
+            <h2 class="temperature"></h2>
+
+            <ul class="extra-data">
+                <li class="minium"></li>
+                <li class="maximum"></li>
+                <li class="feels-like"></li>
+            </ul>
+
+            <div class="no-data-message">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 5h2v10h-2v-10zm1 14.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"
+                    />
+                </svg>
+
+                <h3>Either the city doesn't exist or there was some kind of error</h3>
+            </div>
+        </div>
+
+        <script src="./js/main.js" type="module"></script>
+    </body>
+</html>

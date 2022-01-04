@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Google fonts - Mouse Memoirs -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./style.css" />
+
+        <title>Rock, Paper, Scissors, Lizard, Spock</title>
+    </head>
+    <body>
+        <h1 class="app-title">Rock, Paper, Scissors, Lizard, Spock</h1>
+
+        <div id="options">
+            <!-- Rock -->
+            <button class="option" title="Rock" value="rock">
+                <img src="assets/rock.png" />
+            </button>
+
+            <!-- Paper -->
+            <button class="option" title="Paper" value="paper">
+                <img src="assets/paper.png" />
+            </button>
+
+            <!-- Scissors -->
+            <button class="option" title="Scissors" value="scissors">
+                <img src="assets/scissors.png" />
+            </button>
+
+            <!-- Lizard -->
+            <button class="option" title="Lizard" value="lizard">
+                <img src="assets/lizard.png" />
+            </button>
+
+            <!-- Spock -->
+            <button class="option" title="Spock" value="spock">
+                <img src="assets/spock.png" />
+            </button>
+        </div>
+
+        <!-- Game over message -->
+        <div class="game-over-container">
+            <div class="game-over-message">
+                <button>Close</button>
+                <h1></h1>
+                <h2></h2>
+            </div>
+        </div>
+
+        <script src="./js/main.js" type="module"></script>
+    </body>
+</html>

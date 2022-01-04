@@ -1,0 +1,11 @@
+@function get_clock_prop($key) {
+    @if (map-has-key($clock, $key)) {
+        @return map-get($clock, $key);
+    } @else {
+        @error "Key doesn't exist";
+    }
+}
+
+@function generate_shadow($size, $color, $intensity) {
+    @return 0 0 $size rgba($color, $intensity), 0 0 $size rgba($color, $intensity + 0.5);
+}

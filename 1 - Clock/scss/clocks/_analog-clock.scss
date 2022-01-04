@@ -1,0 +1,77 @@
+$clock: (
+    size: clamp(250px, 50vw, 350px),
+    primary-color: #b92804,
+    secondary-color: #fff,
+    border-size: 10px,
+    inner-size: 15px,
+    hands-height: 8px
+);
+
+.analog-clock {
+    position: relative;
+    width: get_clock_prop(size);
+    height: get_clock_prop(size);
+    border: get_clock_prop(border-size) solid get_clock_prop(secondary-color);
+    background-color: get_clock_prop(primary-color);
+    box-shadow: generate_shadow(10px, #000, 0.25),
+        generate_shadow(100px, darken(get_clock_prop(primary-color), 10%), 0.25) inset;
+    transform: rotate(-90deg);
+
+    &,
+    &::after {
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: get_clock_prop(inner-size);
+        height: get_clock_prop(inner-size);
+        background-color: get_clock_prop(secondary-color);
+        transform: translate(-50%, -50%);
+        box-shadow: generate_shadow(5px, #000, 0.25);
+        z-index: 3;
+    }
+
+    .hours,
+    .minutes,
+    .seconds {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: get_clock_prop(secondary-color);
+        border-radius: 20px;
+        transform-origin: left;
+        box-shadow: generate_shadow(2px, #000, 0.25);
+    }
+
+    .hours {
+        width: calc(get_clock_prop(size) * 0.3);
+        height: get_clock_prop(hands-height);
+        margin-top: get_clock_prop(hands-height) * 0.5 * -1;
+        transform: rotate(var(--hours-rotation));
+        z-index: 2;
+    }
+
+    .minutes {
+        $minutes-height: get_clock_prop(hands-height) * 0.5;
+
+        width: calc(get_clock_prop(size) * 0.4);
+        height: $minutes-height;
+        margin-top: -$minutes-height * 0.5;
+        transform: rotate(var(--minutes-rotation));
+        z-index: 1;
+    }
+
+    .seconds {
+        $seconds-height: get_clock_prop(hands-height) * 0.2;
+
+        width: calc(get_clock_prop(size) * 0.4);
+        height: $seconds-height;
+        margin-top: -$seconds-height * 0.5;
+        transform: rotate(var(--seconds-rotation));
+        opacity: 0.5;
+    }
+}
