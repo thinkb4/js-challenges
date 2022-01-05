@@ -6,10 +6,26 @@ class Slider extends HTMLElement {
      */
     mainContainer;
 
+    /**
+     * @type {DocumentFragment}
+     */
+    sliderTemplate;
+
+    /**
+     * @type {DocumentFragment}
+     */
+    slideTemplate;
+
+    /**
+     * Gets the slides count
+     */
     get count() {
         return this.slides.length;
     }
 
+    /**
+     * Observes the slider attributes
+     */
     static get observedAttributes() {
         return ["current"];
     }
@@ -18,17 +34,18 @@ class Slider extends HTMLElement {
         super();
         this.shadow = this.attachShadow({ mode: "open" });
         this.setStyleTag();
+        this.setTemplates();
     }
 
     //#endregion
 
-    //#region Lifecycle methods
+    //#region Life cycle methods
 
     connectedCallback() {
         this.setSlider();
     }
 
-    attributeChangedCallback(name, oldValue, newValue) {
+    attributeChangedCallback(_name, oldValue, newValue) {
         if (oldValue !== newValue) this.updateSlideStyles();
     }
 
@@ -90,7 +107,7 @@ class Slider extends HTMLElement {
     setSlider() {
         this.setMainContainer();
         this.setSlides();
-        this.setNavigationButtons();
+        this.setNavigationButtonsActions();
         this.setNavigationDots();
         this.goToSlide();
     }
@@ -99,10 +116,9 @@ class Slider extends HTMLElement {
      * Sets the main container
      */
     setMainContainer() {
-        const div = document.createElement("div");
-        div.classList.add("slider");
-        this.shadowRoot.append(div);
-        this.mainContainer = div;
+        const template = this.sliderTemplate.cloneNode(true);
+        this.mainContainer = template.content.children[0];
+        this.shadowRoot.append(this.mainContainer);
     }
 
     /**
@@ -110,51 +126,40 @@ class Slider extends HTMLElement {
      */
     setSlides() {
         for (const slide of this.slides) {
-            const container = document.createElement("div");
-            const text = document.createElement("div");
-            const h2 = document.createElement("h2");
-            const p = document.createElement("p");
+            const template = this.slideTemplate.cloneNode(true);
+            const slideElement = template.content.children[0];
+            const h2 = slideElement.querySelector("#slide-title");
+            const p = slideElement.querySelector("#slide-description");
 
-            container.classList.add("slide");
-            text.classList.add("slide-text");
-
-            container.style.backgroundImage = `url(${slide.background})`;
+            slideElement.style.backgroundImage = `url(${slide.background})`;
             h2.textContent = slide.title;
             p.textContent = slide.description;
-            text.append(h2, p);
-            container.append(text);
-            this.mainContainer.append(container);
+            this.mainContainer.append(slideElement);
         }
     }
 
     /**
      * Sets the navigation buttons
      */
-    setNavigationButtons() {
-        const prevButton = document.createElement("button");
-        const nextButton = document.createElement("button");
+    setNavigationButtonsActions() {
+        const prevButton = this.mainContainer.querySelector(".slider-prev-btn");
+        const nextButton = this.mainContainer.querySelector(".slider-next-btn");
 
-        prevButton.classList.add("slider-prev-btn");
-        nextButton.classList.add("slider-next-btn");
         prevButton.addEventListener("pointerdown", e => this.goToPreviousSlide(e));
         nextButton.addEventListener("pointerdown", e => this.goToNextSlide(e));
-        this.mainContainer.append(prevButton, nextButton);
     }
 
     /**
      * Sets the navigation dots
      */
     setNavigationDots() {
-        const div = document.createElement("div");
+        const dots = this.mainContainer.querySelector(".slider-dots");
 
         for (const slide in this.slides) {
             const button = document.createElement("button");
             button.addEventListener("pointerdown", () => this.goToSlide(slide));
-            div.append(button);
+            dots.append(button);
         }
-
-        div.classList.add("slider-dots");
-        this.mainContainer.append(div);
     }
 
     /**
@@ -188,6 +193,18 @@ class Slider extends HTMLElement {
         linkElem.setAttribute("rel", "stylesheet");
         linkElem.setAttribute("href", "./components/slider/style.css");
         this.shadowRoot.append(linkElem);
+    }
+
+    /**
+     * Sets the component templates
+     */
+    setTemplates() {
+        const sliderTemplate = document.querySelector("#slider-template");
+        const slideTemplate = document.querySelector("#slide-template");
+        this.sliderTemplate = sliderTemplate;
+        this.slideTemplate = slideTemplate;
+        sliderTemplate.remove();
+        slideTemplate.remove();
     }
 
     /**
