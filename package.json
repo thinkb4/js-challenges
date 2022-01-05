@@ -1,4 +1,22 @@
 {
+    "name": "js-challenges",
+    "author": "Emilio Domínguez",
+    "license": "MIT",
+    "description": "A collection of challenges for you to practice and apply what you've learned of Javascript so far. Have fun! 🎉",
+    "version": "1.0.0",
+    "keywords": [
+        "javascript",
+        "challenges",
+        "exercises"
+    ],
+    "homepage": "https://github.com/thinkb4/js-challenges#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thinkb4/js-challenges.git"
+    },
+    "bugs": {
+        "url": "https://github.com/thinkb4/js-challenges/issues"
+    },
     "type": "module",
     "scripts": {
         "presass": "yarn install",
