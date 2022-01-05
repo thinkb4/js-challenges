@@ -13,7 +13,7 @@ Can you create a clock that simultaneously shows the time of California, Argenti
 ---
 
 ### Useful documentation:
-[Date API](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date)
-[DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-[Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)
-[Set Interval](https://developer.mozilla.org/es/docs/Web/API/setInterval)
+- [Date API](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)
+- [Set Interval](https://developer.mozilla.org/es/docs/Web/API/setInterval)

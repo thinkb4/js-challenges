@@ -8,7 +8,7 @@ This project consists on recreating the game digitally following the logic descr
 ---
 
 ### Useful documentation:
-[DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-[Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-[Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
-[Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+- [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)

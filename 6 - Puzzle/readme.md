@@ -15,12 +15,12 @@ Nothing more satisfying than knowing how long it took you to solve a puzzle. Can
 ---
 
 ### Useful documentation:
-[DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-[Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)
-[Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
-[Loops](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
-[Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-[Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-[Drag events](https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event)
-[Date API](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date)
-[Canvas API](https://developer.mozilla.org/es/docs/Web/API/Canvas_API) *(**Tip:** you can use canvas to crop the puzzle pieces from an image)* 😉
+- [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)
+- [Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [Loops](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
+- [Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+- [Drag events](https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event)
+- [Date API](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [Canvas API](https://developer.mozilla.org/es/docs/Web/API/Canvas_API) *(**Tip:** you can use canvas to crop the puzzle pieces from an image)* 😉

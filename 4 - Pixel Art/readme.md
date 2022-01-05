@@ -13,7 +13,7 @@ Can you add templates with designs so that users can select and color them?
 ---
 
 ### Useful documentation:
-[DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-[Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-[Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-[Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)
+- [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+- [Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)

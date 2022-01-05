@@ -12,12 +12,12 @@ Can you add actions so that the slider works in a tactile way or plays automatic
 ---
 
 ### Useful documentation:
-[DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-[Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)
-[Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
-[Loops](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
-[Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-[Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-[Web components](https://developer.mozilla.org/es/docs/Web/Web_Components/Using_custom_elements)
-[Set Interval](https://developer.mozilla.org/es/docs/Web/API/setInterval)
-[Clear Interval](https://developer.mozilla.org/es/docs/Web/API/clearInterval)
+- [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Custom properties](https://developer.mozilla.org/es/docs/Web/CSS/--*)
+- [Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [Loops](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
+- [Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+- [Web components](https://developer.mozilla.org/es/docs/Web/Web_Components/Using_custom_elements)
+- [Set Interval](https://developer.mozilla.org/es/docs/Web/API/setInterval)
+- [Clear Interval](https://developer.mozilla.org/es/docs/Web/API/clearInterval)

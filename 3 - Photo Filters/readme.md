@@ -7,8 +7,8 @@ The goal of this project is to create an application for users to apply differen
 ---
 
 ### Useful documentation:
-[DOM Manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-[Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-[Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
-[Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-[CSS filters](https://developer.mozilla.org/es/docs/Web/CSS/filter)
+- [DOM Manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [Arrays](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays) and [Objects](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects)
+- [Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+- [CSS filters](https://developer.mozilla.org/es/docs/Web/CSS/filter)

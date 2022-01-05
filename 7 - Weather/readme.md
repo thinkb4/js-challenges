@@ -14,8 +14,8 @@ Although it is useful to know the current weather, to plan a trip it is often es
 ---
 
 ### Useful documentation:
-[DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
-[Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-[Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-[Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-[Local Storage](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage)
+- [DOM manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [Conditionals](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
+- [Events setup](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+- [Fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
+- [Local Storage](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage)
