@@ -2,7 +2,7 @@
 
 ### Introduction:
 Do you know the traditional game "rock, paper, or scissors"? 
-This application is inspired by that game but more precisely in its version presented in The Big Bang Theory series. I leave you a [summary] (https://www.youtube.com/watch?v=x5Q6-wMx-K8) of one of the chapters in which Sheldon, one of the main characters of the series, explains its logic.
+This application is inspired by that game but more precisely in its version presented in The Big Bang Theory series. I leave you a [summary](https://www.youtube.com/watch?v=x5Q6-wMx-K8) of one of the chapters in which Sheldon, one of the main characters of the series, explains its logic.
 This project consists on recreating the game digitally following the logic described in the video.
 
 ---
