@@ -1,16 +1,18 @@
-# JS Challenges 
+# JS Challenges
 
 A collection of challenges for you to practice and apply what you've learned of Javascript so far. Have fun! 🎉
 
 ---
 
-## Table of contents
 - [Projects](#projects)
-- [Instructions](#instructions)
+- [Useful information](#useful-information)
+    - [How to run the project?](#how-to-run-the-project-)
+    - [Projects structure](#projects-structure)
+    - [Styles compilation](#styles-compilation)
 
 ---
 
-### Projects
+## Projects
 
 1. [Clock](/1%20-%20Clock/readme.md)
 2. [Rock, Paper, Scissors, Lizard, Spock](/2%20-%20Rock,%20Paper,%20Scissors,%20Lizard,%20Spock/readme.md)
@@ -22,7 +24,14 @@ A collection of challenges for you to practice and apply what you've learned of 
 
 ---
 
-### Instructions
+## Useful information
+
+#### How to run the project?
+
+Our recommendation is to run the main project or any of the challenges using [Visual Studio Code](https://code.visualstudio.com/) with the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
+
+#### Projects structure
+
 Every challenge folder has pretty much the same structure (except for some exceptions), but normally it's something like this...
 
     Project folder...
@@ -34,17 +43,21 @@ Every challenge folder has pretty much the same structure (except for some excep
     └── readme.md       # The readme folder including the challenge instructions
     └── ...
 
+#### Styles compilation
+
 All of them have an **scss** folder which includes all of the project stylesheets. In order to compile them you should be positioned on the root directory and run the following commands.
 
 If you're using npm...
+
 ```shell
 npm run sass $1
 ```
 
 If you're using yarn...
+
 ```shell
 yarn run sass $1
 ```
 
-**$1** is the expected argument of the command which references the project you want to compile. 
-Eg: ```yarn run sass Rock``` This will compille all of the *Rock, Paper, Scissors, Lizard, Spock* project styles.
+**$1** is the expected argument of the command which references the project you want to compile.
+Eg: `yarn run sass Rock` This will compille all of the _Rock, Paper, Scissors, Lizard, Spock_ project styles.
