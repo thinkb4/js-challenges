@@ -14,13 +14,13 @@ A collection of challenges for you to practice and apply what you've learned of 
 
 ## Projects
 
-1. [Clock](/1%20-%20Clock/readme.md)
-2. [Rock, Paper, Scissors, Lizard, Spock](/2%20-%20Rock,%20Paper,%20Scissors,%20Lizard,%20Spock/readme.md)
-3. [Photo filters](/3%20-%20Photo%20Filters/readme.md)
-4. [Pixel art](/4%20-%20Pixel%20Art/readme.md)
-5. [Slider](/5%20-%20Slider/readme.md)
-6. [Puzzle](/6%20-%20Puzzle/readme.md)
-7. [Weather](/7%20-%20Weather/readme.md)
+1. [Clock](challenges/1%20-%20Clock/readme.md)
+2. [Rock, Paper, Scissors, Lizard, Spock](challenges/2%20-%20Rock,%20Paper,%20Scissors,%20Lizard,%20Spock/readme.md)
+3. [Photo filters](challenges/3%20-%20Photo%20Filters/readme.md)
+4. [Pixel art](challenges/4%20-%20Pixel%20Art/readme.md)
+5. [Slider](challenges/5%20-%20Slider/readme.md)
+6. [Puzzle](challenges/6%20-%20Puzzle/readme.md)
+7. [Weather](challenges/7%20-%20Weather/readme.md)
 
 ---
 
