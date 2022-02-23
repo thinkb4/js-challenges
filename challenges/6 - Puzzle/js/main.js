@@ -4,7 +4,7 @@ import { isSorted, shuffleArray } from "./helpers.js";
 const puzzlesSelect = document.querySelector("#puzzles-select");
 const puzzleContainer = document.querySelector("#puzzle");
 const configuration = Object.freeze({
-    grid: 2,
+    grid: 3,
     startedClassName: "started",
     finishedClassName: "finished"
 });
