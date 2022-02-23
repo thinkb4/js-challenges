@@ -35,6 +35,11 @@ const projects = Object.freeze([
         name: "Weather",
         thumbnail: "./src/assets/weather.png",
         url: `${projectsFolder}/7 - Weather/index.html`
+    },
+    {
+        name: "Zombieland",
+        thumbnail: "./src/assets/zombie.jpg",
+        url: `${projectsFolder}/8 - Zombieland/index.html`
     }
 ]);
 

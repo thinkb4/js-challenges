@@ -21,6 +21,7 @@ A collection of challenges for you to practice and apply what you've learned of 
 5. [Slider](challenges/5%20-%20Slider/readme.md)
 6. [Puzzle](challenges/6%20-%20Puzzle/readme.md)
 7. [Weather](challenges/7%20-%20Weather/readme.md)
+8. [Zombieland](challenges/8%20-%20Zombieland/readme.md)
 
 ---
 
